@@ -1,0 +1,131 @@
+.today-events-container {
+    h2 {
+        font-size: 1.5rem;
+        color: pink;
+        margin-bottom: 1rem;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+            margin-bottom: 1.5rem;
+            background-color: #fff;
+            border-radius: 0.5rem;
+            box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+
+            &:hover {
+                box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+            }
+
+            .event-summary {
+                font-size: 1.125rem;
+                color: #333;
+                margin-bottom: 0.5rem;
+            }
+
+            .event-time {
+                font-size: 0.875rem;
+                color: #555;
+            }
+        }
+    }
+}
+
+.no-events-container {
+    p {
+        font-size: 18px;
+        color: #777;
+    }
+}
+
+.navigation-button {
+    position: fixed;
+    right: 1rem;
+    top: 1rem;
+    padding: 1rem;
+    background-color: #90EE90;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.3125rem;
+}
+
+.navigation-button:hover {
+    background-color: #0056b3;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7fafc;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.card {
+    max-width: 20rem;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.photo-wrapper {
+    padding: 0.5rem;
+}
+
+img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+h3 {
+    font-size: 1.25rem;
+    color: #1a202c;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    font-size: 0.75rem;
+    color: #718096;
+    margin: 0;
+}
+
+table {
+    width: 100%;
+    margin-top: 0.75rem;
+}
+
+td {
+    padding: 0.5rem;
+    text-align: left;
+    font-weight: 600;
+    color: #a0aec0;
+}
+
+a {
+    font-size: 0.75rem;
+    color: #007bff;
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    margin-top: 1rem;
+}
+
+a:hover {
+    text-decoration: underline;
+}

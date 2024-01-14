@@ -1,0 +1,36 @@
+<div class="navigation-button" (click)="navigateToScheduler()">
+    Schedule Meeting
+</div>
+<div class="card">
+    <div class="photo-wrapper">
+        <img src="{{userProfileImg}}" alt="User Profile Image">
+    </div>
+    <h3>{{name}}</h3>
+
+    <table>
+        <tbody>
+            <tr>
+                <td>Email</td>
+                <td>{{email}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <div>
+        <a (click)="singOuta()">SignOut</a>
+    </div>
+</div>
+<div *ngIf="events && events.length > 0" class="today-events-container">
+    <h2>Today's Calendar Events</h2>
+    <ul>
+        <li *ngFor="let event of events">
+            <div class="event-card">
+                <div class="event-summary">{{ event.summary }}</div>
+                <div class="event-time">{{ event.start.dateTime | date: 'mediumTime' }}</div>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<div *ngIf="!events || events.length === 0" class="no-events-container">
+    <p>No events for today.</p>
+</div>
